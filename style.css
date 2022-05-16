@@ -130,3 +130,29 @@ label:active>span {
   box-shadow: 0rem  0rem 0.8rem 0.3rem rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.1);
 }
+
+@keyframes slidein {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 540px) {
+  .slider__nav {
+    width: 40%;
+    margin: 0 auto;
+    order: 1;
+  }
+
+  .description {
+    width: 100%;
+    order: 2;
+  }
+  .description p{
+    font-size: 1rem;
+  }
+}
