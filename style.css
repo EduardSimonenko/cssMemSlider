@@ -90,3 +90,43 @@ label:hover>span {
 label:active>span {
   background-color: #f9be00;
 }
+
+#meme1:checked~.slider__memes>.slider__meme:first-child {
+  margin-left: 0;
+}
+
+#meme2:checked~.slider__memes>.slider__meme:first-child {
+  margin-left: -100%;
+}
+
+#meme3:checked~.slider__memes>.slider__meme:first-child {
+  margin-left: -200%;
+}
+
+#meme4:checked~.slider__memes>.slider__meme:first-child {
+  margin-left: -300%;
+}
+
+#meme1:checked~.description p:first-child {
+  margin-left: 0;
+}
+
+#meme2:checked~.description p:first-child {
+  margin-left: -100%;
+}
+
+#meme3:checked~.description p:first-child {
+  margin-left: -200%;
+}
+
+#meme4:checked~.description p:first-child {
+  margin-left: -300%;
+}
+
+#meme1:checked~.slider__nav label[for="meme1"] span,
+#meme2:checked~.slider__nav label[for="meme2"] span,
+#meme3:checked~.slider__nav label[for="meme3"] span,
+#meme4:checked~.slider__nav label[for="meme4"] span{
+  box-shadow: 0rem  0rem 0.8rem 0.3rem rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.1);
+}
