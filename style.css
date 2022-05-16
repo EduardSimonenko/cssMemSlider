@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: url(./assets/img/noise_transparent.png),
+  radial-gradient(100% 215.42% at 0% 0%, #244a5f 0%, #262425 100%),
+  #211F20;
+}
+
+.wrapper {
+  width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.slider {
+  max-width: 70vw;
+  margin: 10rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2.4rem;
+  justify-content: space-between;
+}
+
+.slider__memes {
+  width: 70vw;
+  display: flex;
+  border-radius: 5%;
+  overflow: hidden;
+  box-shadow: 0rem  0rem 1.7rem 1rem rgba(239, 248, 255, 1.0);
+}
+
+.slider__meme {
+  min-width: 100%;
+  text-align: center;
+  transition: all 0.7s linear;
+}
+
+.slider__meme img {
+  width: 100%;
+  max-height: 55vh;
+  object-fit: contain;
+}
+
+.description {
+  width: 70%;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.description p {
+  min-width: 100%;
+  text-align: left;
+  font-size: 1.4rem;
+  color: #d8e3eb;
+  margin: 0;
+  transition: all 0.7s linear;
+}
+
+.slider__nav {
+  width: 25%;
+  display: flex;
+}
+
+input {
+  display: none;
+}
+
+label {
+  width: 25%;
+  padding: 5%;
+  cursor: pointer;
+}
+
+label>span {
+  display: block;
+  margin: 0 auto;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+  background-color: #d8e3eb;
+  transition: all 0.5s linear;
+}
+
+label:hover>span {
+  background-color: #e7bea8;
+}
+
+label:active>span {
+  background-color: #f9be00;
+}
