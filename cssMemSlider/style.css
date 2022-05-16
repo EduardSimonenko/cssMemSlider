@@ -14,7 +14,7 @@ body {
 }
 
 .slider {
-  max-width: 70vw;
+  max-width: 50vw;
   margin: 10rem auto 0;
   display: flex;
   flex-wrap: wrap;
@@ -23,7 +23,7 @@ body {
 }
 
 .slider__memes {
-  width: 70vw;
+  width: 100%;
   display: flex;
   border-radius: 5%;
   overflow: hidden;
@@ -142,6 +142,10 @@ label:active>span {
 }
 
 @media (max-width: 540px) {
+  .slider{
+    max-width: 70%;
+  }
+
   .slider__nav {
     width: 40%;
     margin: 0 auto;
@@ -159,6 +163,6 @@ label:active>span {
 
 @media (min-width: 1170px) {
   .slider{
-    max-width: 60vw;
+    max-width: 45vw;
   }
 }
